@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 3px solid #000;
+        table-layout: fixed;
+        width: 100%;
+      }
+ 
+      caption {
+        caption-side: bottom;
+        margin-top: 20px;
+      }
+ 
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 6px 20px;
+      }
+ 
+      th {
+        background-color: #eee;
+      }
+ 
+      td {
+        text-align: center;
+      }
+ 
+      tfoot {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+    <caption>2023 학년도 대학수능능력시험 성적통지표</caption>
+    <thead>
+        <tr>
+          <th>구분</th>
+          <th id="K-history" rowspan="2">한국사영역</th>
+          <th id="Korean" scope="col">국어 영역</th>
+          <th id="Math" scope="col">수학 영역</th>
+          <th id="English" scope="col" rowspan="2">영어 영역</th>
+          <th id="Science" scope="col" colspan="2">탐구 영역</th>
+          <th id="Forign" scope="col">제 2 외국어/한문영역</th>
+        </tr>
+        <tr>
+          <th scope="row">선택과목</th>
+          <th id="Speak-writing" scope="col">화법과 작문</th>
+          <th id="percent" scope="col">확률과 통계</th>
+          <th id="ethics" scope="col">생활과 윤리</th>
+          <th id="earth-sci" scope="col">지구과학1</th>
+          <th id="germ" scope="col">독일어</th>
+        </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <th scope="row">표준점수</th>
+          <td rowspan="2" id headers="K-history"></td>
+          <td id headers="Korean Speak-writing">131</td>
+          <td id headers="Math percent">137</td>
+          <td rowspan="2" id headers="English"></td>
+          <td id headers="Science ethics">53</td>
+          <td id headers="Science earth-sci">64</td>
+          <td rowspan="2" id headers="Forign germ"></td>
+      </tr>
+      <tr>
+          <th scope="row">백분위</th>
+          <td id headers="Korean Speak-writing">93</td>
+          <td id headers="Math percent">95</td>
+          <td id headers="Science ethics">75</td>
+          <td id headers="Science earth-sci">93</td>
+      </tr>
+  </tbody>
+  <tfoot>
+        <th scope="row">등급</th>
+        <td id headers="K-history">2</td>
+        <td id headers="Korean Speak-writing">2</td>
+        <td id headers="Math percent">2</td>
+        <td id headers="English">1</td>
+        <td id headers="Science ethics">1</td>
+        <td id headers="Science earth-sci">2</td>
+        <td id headers="Forign germ">2</td>
+  </tfoot>
+  </table>
+  </body>
+</html>
