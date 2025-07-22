@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .sr-only {
+            position:absolute;
+            left:-9999px;
+            top:auto;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+        }
+    </style>
+    <title>당근홈페이지</title>
+  </head>
+  <body>
+    <!-- header : 상단 네비게이션과 검색창 -->
+    <header>
+        <h1>당근</h1>
+        <nav>
+            <ul>
+                <li>중고거래</li>
+                <li>동네업체</li>
+                <li>알바</li>
+                <li>부동산</li>
+                <li>중고차 직거래</li>
+            </ul>
+            <div>
+                <span>물품이나 동네를 검색해보세요</span>
+                <!-- 검색창 태그 몰라서 스판 태그로 씁니다.. -->
+                <button id="go-to-chat">채팅하기</button>
+            </div>
+        </nav>
+    </header>
+    <!-- main 시작 : 총 5개 section -->
+    <main>
+        <!-- sec1 -->
+        <section>
+            <h2>당신 근처의<br>지역 생활 커뮤니티</h2>
+            <p>동네라서 가능한 모든 것<br>당근에서 가까운 이웃과 함께해요</p>
+            <button onclick="">Google Play</button>
+            <button onclick="">App Store</button>
+        </section>
+        <!-- sec2 -->
+        <section>
+            <span>중고거래</span>
+            <h2>믿을만한<br>이웃 간 중고거래</h2>
+            <p>동네 주민들과 가깝고 따뜻한 거래를<br>지금 경험해보세요</p>
+            <button onclick="">인기매물보기</button>
+            <button onclick="">믿을 수 있는 중고거래</button>
+        </section>
+        <!-- sec3 -->
+        <section>
+            <span>동네생활</span>
+            <h2>이웃만 아는<br>동네 정보와 이야기</h2>
+            <p>우리동네의 다양한 정보와 이야기를<br>공감과 댓글로 나누어요</p>
+            <!-- 동네생활 아이콘 3가지 -->
+            <ol>
+                <li>
+                    <a href="">
+                        <img src="" alt="사람들">
+                    </a>
+                    <h3>동네모임</h3>
+                    <p>근처 이웃들과 동네<br>이야기를 해보세요</p>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="질문">
+                    </a>
+                    <h3>동네질문</h3>
+                    <p>궁금한 게 있을 땐<br>이웃에 물어보세요</p>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="유실물">
+                    </a>
+                    <h3>동네분실센터</h3>
+                    <p>무언가를 잃어버렸다면<br>글을 올려보세요</p>
+                </li>
+            </ol>
+        </section>
+        <!-- sec4 -->
+        <section>
+            <span>알바</span>
+            <h2>걸어서 10분!<br>동네 알바 구하기</h2>
+            <p>당근하듯 쉽고, 편하게<br>당근 알바로 동네 알바를 구할 수 있어요.</p>
+            <button onclick="">내근처 알바 보기</button>
+        </section>
+        <!-- sec5 -->
+        <section>
+            <span>동네업체</span>
+            <h2>내 근처에서 찾는<br>동네업체</h2>
+            <p>이웃들의 추천 후기를 확인하고<br>동네 곳곳의 업체들을 찾을 수 있어요.</p>
+            <button onclick="">당근 동네업체 보기</button>
+        </section>
+    </main>
+    <!-- MAIN 끝 FOOTER시작 : 네비게이션, 당근앱다운로드, 회사정보 -->
+     <footer>
+        <section>
+            <h2 class="sr-only">당근 회사 관련 링크 목록</h2>
+            <ul>
+                <li>중고거래</li>
+                <li>동네업체</li>
+                <li>당근알바</li>
+                <li>부동산</li>
+                <li>중고차 직거래</li>
+            </ul>
+            <ul>
+                <li>당근비즈니스</li>
+                <li>채팅하기</li>
+            </ul>
+            <ul>
+                <li>자주 묻는 질문</li>
+                <li>회사 소개</li>
+                <li>인재 채용</li>
+            </ul>
+        </section>
+        <section>
+            <h2>당근 앱 다운로드</h2>
+            <button onclick="">App Store</button>
+            <button onclick="">Google Play</button>
+        </section>
+        <section>
+            <h2 class="sr-only">당근 회사 정보</h2>
+            <address>
+                <span>대표 </span>김용현, 황도연 | <span>사업자번호 </span>375-87-00088<br>
+                <span>직업정보제공사업 신고번호 </span> J1200020200016<br>
+                <span>통신판매업 신고 번호 </span>2021-서울서초-2875<br>
+                <span>주소 </span>서울특별시 구로구 디지털로 200, 10층 (당근서비스)<br>
+                <span>전화 </span>1544-9796<span>고객문의 </span> cs@daangnservice.com
+            </address>
+        </section>
+        <section>
+            <h2 class="sr-only">각종문의</h2>
+            <ol>
+                <li>제휴 문의</li>
+                <li>광고 문의</li>
+                <li>PR 문의</li>
+                <li>IR 문의</li>
+            </ol>
+        </section>
+        <section>
+            <h2 class="sr-only">정책과 약관</h2>
+            <ol>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>운영정책</li>
+                <li>위치기반서비스 이용약관</li>
+                <li>이용자보호 비전과 계획</li>
+                <li>청소년보호정책</li>
+            </ol>
+        </section>
+        <section>
+            <h2 class="sr-only">당근SNS</h2>
+            <a href="">
+                <img src="" alt="페이스북">
+            </a>
+            <a href="">
+                <img src="" alt="인스타그램">
+            </a>
+            <a href="">
+                <img src="" alt="유튜브">
+            </a>
+            <a href="">
+                <img src="" alt="블로그">
+            </a>
+        </section>
+        <!-- section으로 언어 변경하는 것 추가 -->
+     </footer>
+  </body>
+</html>
